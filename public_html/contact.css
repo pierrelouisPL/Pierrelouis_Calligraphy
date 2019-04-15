@@ -1,0 +1,18 @@
+
+.social-media-link:link, .social-media-link:visited {
+    font-family: 'Bitter', serif;
+    color: black;
+    text-decoration: none;
+
+}
+
+.social-media-link:hover, .social-media-link:active {
+    font-family: 'Bitter', serif;
+    color: grey;
+    text-decoration: none;
+
+}
+
+.social-media-icon {
+    height: 1em;
+}

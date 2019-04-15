@@ -1,0 +1,285 @@
+/* MOBILE */
+@media screen and (max-width: 750px) {
+
+    .text-standard {
+        width: 90%;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        text-align: justify;
+        font-family: 'Caudex', serif;
+    }
+
+    #box-main {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+
+    }
+
+    #header {
+        width: 100%;
+        height: 4em;
+        position: relative;
+    }
+
+    #logo-main {
+        height: 3em;
+        padding: 0.5em;
+        left: 0;
+        bottom: 0;
+    }
+
+
+    #menu-pc {
+        display: none;
+    }
+
+    #box-content {
+        top: 15%;
+        height: 85%;
+        width: 100%;
+        overflow: scroll;
+    }
+
+    #box-text {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* by default we want the menu closed - it will be displayed by js f-tion, when button pressed*/
+    #menu-mob {
+        display: none;
+    }
+
+    #menu-mob-button {
+        position: absolute;
+        height: 3em;
+        padding: 0.5em;
+        top: 0;
+        right: 1em;
+    }
+
+    #main-dividing-line {
+        display: none;
+    }               
+/*
+    #mobile-main-dividing-line {
+
+    }
+*/
+    /* the menu items are displayed only if the menu button is clicked
+     * made using js
+     */
+    .menu-mob-item {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1em;
+
+        text-decoration: none;
+        color: black;
+
+        font-family: 'Caudex', serif;
+        font-size: 2em;
+    }
+
+    #logo-banner-pc {
+        display: none;
+    }
+
+    #logo-banner-mob {
+        display: block;
+        width: 100%;
+    }
+}
+
+
+
+/* STD DESKTOP / TABLET BROWSING ==============================================================================*/
+@media screen and (min-width: 750px) {
+    #box-main {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        /*background-color: antiquewhite;*/
+
+    }
+
+    #header {
+        width: 100%;
+        height: 7em;
+        /*background-color: aquamarine;*/
+
+        position: relative;
+    }
+
+    #logo-main {
+        height: 5em;
+        padding: 1em;
+        left: 0;
+        bottom: 0;
+    }
+
+    /*------------------------------------------------------------------------------------------- PC MENU */
+    /* when display is too narrow, don't show the PC menu */
+    @media only screen and (max-width: 30em) {
+
+        #menu-pc {
+            display: none;
+        }
+    }
+
+    /* if it's wide enough */
+    @media only screen and (min-width: 30em) {
+
+        #menu-pc {
+            right: 0;
+            bottom: 0;
+            width: 20em;
+            height: 3em;
+            display: inline;
+
+            position: absolute;
+        }
+
+        .menu-pc-item:link, .menu-pc-item:visited {
+            padding: 1em;
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            font-family: 'Caudex', serif;
+        }
+
+        .menu-pc-item:hover, .menu-pc-item:active {
+            padding: 1em;
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            font-family: 'Caudex', serif;
+        }
+    }
+
+    /*--------------------------------------------------------------------------------------------*/
+    /*------------------------------------------------------------------------------------------- MOBILE MENU */
+    /* when display is too wide, don't show the MOBILE menu */
+    @media only screen and (min-width: 30em) {
+
+        #menu-mob-button {
+            display: none;
+        }
+
+        #menu-mob {
+            display: none;
+        }
+
+        #mobile-main-dividing-line {
+            display: none;
+        }
+
+    }
+
+    /* if it's NARROW enough */
+    @media only screen and (max-width: 30em) {
+
+        /* by default we want the menu closed - it will be displayed by js f-tion, when button pressed*/
+        #menu-mob {
+            display: none;
+        }
+
+        #menu-mob-button {
+            right: 0;
+            bottom: 0;
+            /*width: 20em;*/
+            height: 2em;
+            display: inline;
+
+            position: absolute;
+            padding: 1em;
+        }
+
+        #main-dividing-line {
+            display: none;
+        }
+
+        /* the menu items are displayed only if the menu button is clicked
+         * made using js
+         */
+        .menu-mob-item {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 1em;
+
+            text-decoration: none;
+            color: black;
+
+            font-family: 'Caudex', serif;
+            /*background-color: lightgray;*/
+        }
+
+    }
+
+    /*--------------------------------------------------------------------------------------------*/
+    #box-content {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .text-standard {
+        text-align: justify;
+        /*font-family: 'Bitter', serif;*/
+        font-family: 'Caudex', serif;
+    }
+
+    /* when screen get's bigger, text can move a little lower */
+    @media only screen and (min-width: 30em) {
+        #box-content {
+            padding-top: 2em;
+        }
+    }
+
+
+
+    /* ONLY FOR LARGE SCREENS (PC)*/
+    @media only screen and (min-width: 60em) {
+
+        #box-main {
+            width: 60em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #box-content {
+            width: 40em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    }
+
+    /*-------------------------------------------------------------- elements specific for HOME site */
+    /* PIERRE LOUIS BANNER */
+    #logo-banner-pc {
+        display: none;
+    }
+
+    #logo-banner-mob {
+        width: 100%;
+    }
+
+    @media only screen and (min-width: 30em) {
+        #logo-banner-mob {
+            display: none;
+        }
+
+        #logo-banner-pc {
+            display: block;
+            width: 100%;
+        }
+    }
+}
